@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0; 
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(25, 25, 80);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 25px;
+            
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstSection {
+           display: flex;
+           justify-content: space-around;
+           margin: 23px 0;
+       }
+
+           .firstSection > div {
+               width: 30%;
+           }
+
+       .leftSection {
+           font-size: 2rem;
+           width: 80%;
+           margin-top: 3rem;
+       }
+
+       .leftSection>p {
+           font-size: smaller;
+       }
+
+       .dlbutton {
+           display: flex;
+           align-items: center; /* Align items vertically */
+           justify-content: start; /* Distribute items along the main axis */
+       }
+
+      /*  .dlbutton > img {
+           height: 1.5rem;
+           margin-top: 10px;
+       }
+*/
+       .imgbtn{
+           height: 1.5rem;
+           /* margin: -80px 10px 10px 205px; */
+       }
+
+       .download-label {
+           text-decoration: none; /* Remove underline */
+           color: inherit; /* Use the default text color */
+           margin-left: 23px; /* Adjust spacing */
+           font-size: 15px;
+           color: white;
+           height: 40px;
+           width: 10rem;
+           background-color: rgb(25, 25, 80);
+           border-radius: 5px;
+           box-shadow: 0 4px 6px rgba(255, 16, 255, 0.8), 0 1px 3px rgba(255, 16, 255, 0.8);
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           transition: background-color 0.3s;
+       }
+
+           .download-label:hover {
+           background-color: #6a5acd; /* Change background color on hover */
+       }
+       
+
+       /* .lblSection{
+           
+       } */
+       /* .imgSection{
+
+       } */
+       .rightSection {
+           height: 100%;
+       }
+       .secondSection{
+    color: white;
+    margin: 23px 0;
+}
+.card{
+    border-radius: 10px;
+    border: 0;
+    width: 100%; /* Full width */
+    max-width: 800px; /* Optional: Limit the maximum width */
+    margin: 0 auto 10% auto; /* Auto margin to center horizontally */
+    box-shadow: 0 4px 6px rgba(255, 16, 255, 0.8), 0 1px 3px rgba(255, 16, 255, 0.8);
+}
+
+.card-title{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.card-body{
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(25, 25, 80);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+/* .aboutme{
+    
+} */
+.techstack{
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
+}
+.technology-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .technology-list li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    /* .thirdSection{
+   
+} */
+
+.project{
+    margin: 0 auto 10% auto;
+}
+.fourthSection {
+    justify-content: center;
+}
+
+.conbtn{
+    color: inherit; /* Use the default text color */
+    font-size: 15px;
+    color: white;
+    height: 40px;
+    width: 10rem;
+    background-color: rgb(25, 25, 80);
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(255, 16, 255, 0.8), 0 1px 3px rgba(255, 16, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5.5rem;
+    transition: background-color 0.3s;
+}
+.conbtn:hover {
+        background-color: #6a5acd; /* Change background color on hover */
+}
+.btn-primary {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    margin: 10px; 
+    border-radius: 25px;
+    width: 5rem;
+}
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+    .form-group label {
+        margin-bottom: 0.5rem;
+    }
+
+    .form-control {
+        width: 20rem;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #efeff5;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+.socialicons {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+    .socialicons a {
+        color: white;
+        font-size: 24px;
+        margin-right: 10px; /* Adjust spacing between icons */
+    }
+
+.fa-linkedin {
+    background: #242475;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    
+}
+
+.fa-twitter {
+    background: #242475;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.fa-instagram{
+    background: #242475;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.fa-github{
+    background: #242475;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.footerSection{
+    background-color: rgb(25, 25, 80);
+    height: 50px;
+}
+.right ul li a {
+    color: white; /* Set text color to white */
+    text-decoration: none; /* Remove underline */
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Aditya's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>  
+    </header>
+</body>
+<body>
+    <header>
+        <main>
+            <section class="firstSection" id="home">
+                <div class="leftSection">
+                    Aditya Soni
+                    <p>Software Developer
+                    <br />I Build Mobile Applications</p>
+                    <section class="dlbutton">
+                        <div class="lblSection">
+                            <a href="DeveloperResume.pdf" download="DeveloperResume.pdf">
+                            <span class="download-label">Download Resume</span>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+                <div class="rightSection">
+                    <img src="bg.svg" alt="developer image">
+                </div>
+            </section>
+            <!-- about section -->
+            <div class="card">
+                <div class="card-body">
+                    <section class="secondSection" id="about">
+                        <div class="card-title"><h3>About</h3></div>
+                        <div class="aboutme">
+                            <span class="text-white">
+                                Dynamic problem solver with 1.9 years of hands-on experience in crafting robust mobile applications using Xamarin Forms and ASP.NET Zero framework. Proficient in C# for backend development and adept in frontend intricacies, ensuring a comprehensive understanding of the development lifecycle.
+                            </span>
+                            <!-- @* <p class="text-white">
+                                Skilled in Azure for seamless deployment, optimizing performance, and scalability. Recognized for outstanding troubleshooting abilities, adaptability in diverse teams, and effective client communication.
+                            </p>
+                            <p class="text-white">
+                                Advanced expertise in publishing mobile apps on App Store and Google Play, maximizing outreach and ensuring client satisfaction.
+                            </p> *@ -->
+                            <div>
+                                <p class="techstack"><strong>Technology:</strong></p>
+                                <ul class="technology-list">
+                                    <li>
+                                        C#
+                                    </li>
+                                    <li>
+                                        Python
+                                    </li>
+                                    <li>
+                                         Xamarin Forms
+                                     </li>
+                                    <li>
+                                        .NET MAUI
+                                        </li>
+                                    <li>
+                                        ASP.NET MVC
+                                    </li>
+                                    <li>
+                                        ASP.NET Zero
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div> 
+            <!-- project section -->
+            <div class="card">
+                <div class="card-body">
+                    <section class="thirdSection" id="projects">
+                        <h3>Projects</h3>
+                        <div class="project">
+                            <h5>Swasth Bharat Mobile App</h5>
+                            <p class="project-description">Transformed healthcare by facilitating seamless patient-doctor interaction through a pre-consultation health questionnaire. Implemented an innovative scoring system providing doctors with vital health insights. Strengthened data security for enhanced patient care, improved doctor-patient relationships, and promoted proactive health management.</p>
+                            <p class="project-technologies"><strong>Technologies:</strong> .NET MAUI, ASP.NET API</p>
+                        </div>
+                        <!-- Add more project entries as needed -->
+                        <div class="project">
+                            <h4>Digi Notary Mobile App</h4>
+                            <p class="project-description">Developed the secure Digi Notary mobile application using the ASP.NET Zero framework. This innovative solution streamlined notary tasks through a user-friendly interface catering to administrators and users. Administrators enjoy privilege management, while users seamlessly submit vital forms, incorporating a cutting-edge digital signature feature. This addition revolutionizes notary work, allowing anytime, anywhere transactions without the need for physical notary books. Redefined notary processes by seamlessly integrating efficiency, accessibility, and advanced digital signature capabilities.</p>
+                            <p class="project-technologies"><strong>Technologies:</strong> ASP.NET Zero, Xamarin Forms, C#</p>
+                        </div>
+                        <!-- Add more project entries as needed -->
+                        <div class="project">
+                            <h4>Digi Notary Web App</h4>
+                            <p class="project-description">Administered document and account types efficiently. Designed an intuitive user interface with separate frontend and backend on Azure for scalability. Enabled notaries globally to notarize documents securely with end-to-end encryption.</p>
+                            <p class="project-technologies"><strong>Technologies:</strong> ASP.NET Zero, Azure</p>
+                        </div>
+                        <!-- Add more project entries as needed -->
+                        <div class="project">
+                            <h4>Shardule App</h4>
+                            <p class="project-description">Facilitated seamless online auctions for product organizing and participation. Sellers showcased items, buyers placed bids, and real-time negotiations streamlined the process. The app ensured a reliable, user-friendly, and speedy system for optimal deals in buying and selling experiences.</p>
+                            <p class="project-technologies"><strong>Technologies:</strong> Xamarin Forms, C#, LINQ</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- Contact section -->
+            <div class="card">
+                <div class="card-body">
+                    <section class="fourthSection" id="contact">
+                        <h3>Contact</h3>
+                        <form id="contactForm" action="#" method="post">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" width="60%" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                        <button class="conbtn" onclick="sendEmail()">Send Me An Email</button>
+                        <div class="socialicons">
+                            <a href="https://www.linkedin.com/in/aditya-soni-66829722b" target="_blank" class="fa fa-linkedin"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="https://www.instagram.com/i_adityasoni?igsh=ZW1mNHJkZjR5OWIw&utm_source=qr" target="_blank" class="fa fa-instagram"></a>
+                            <a href="https://github.com/Aditya-soni01" target="_blank" class="fa fa-github"></a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- footer section -->
+        </main>
+    </header>
+</body>
+</html>
